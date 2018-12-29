@@ -1,22 +1,20 @@
 <script>
-    var a = +(prompt("Введите число А"));
-    var b = +(prompt("Введите число Б"));
-    var znak = prompt("Знаки припенания");
-    function sum(a, b) {return a + b;}                  
-    function del(a, b) {return a - b;}
-    function umn(a, b) {return a * b;}
-    function raz(a, b) {return a / b;}
-    function mathOperation(a, b, znak) {
-        switch (znak) {
-        case "+":
-            return alert(sum(a, b))
-        case "-":
-            return alert(del(a, b))
-        case "*":
-            return alert(umn(a, b))
-        case "/":
-            return alert(raz(a, b))
+    i = 0;
+    var x;
+    while(i<=100){
+       if((i==0)||(i==1)){
+           i++;
+       }
+        i++;
+        x=2;
+        while(x<=i){
+            if(i%x==0){
+                break;
+            }
+            x++;
         }
+        if((i/1==i) && (i%i==0) && (i==x)){
+            document.write(i +" Простое число <br>")
+       }
     }
-    mathOperation(a,b,znak)
 </script>
