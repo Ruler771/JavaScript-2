@@ -1,0 +1,18 @@
+<script>
+    var n = 2;  
+        var i, j;
+        while (n<=100){
+            i = 2;
+            j = 0;
+            while ((i*i <= n)){
+                if (n%i == 0){
+                    j = 1;
+                }
+                i++;
+            }
+            if (j == 0){
+                document.write(n + " Простое число <br>")
+            }
+            n++;
+        }
+</script>
