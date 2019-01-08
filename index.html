@@ -1,0 +1,26 @@
+<script>
+    var number = prompt("введите число от 0 до 999")
+    var object = {}
+
+    function addNumber(number) {
+        var num = number.split('')
+        if (num.length > 3) {
+            console.log("Слишком большое число");
+            return 0;
+        }
+        if (num[0]) {
+            object.единиц = num[0]
+        }
+        if (num[0] && num[1]) {
+            object.единиц = num[1]
+            object.десяток = num[0]
+        }
+        if (num[0] && num[1] && num[2]) {
+            object.единиц = num[2]
+            object.десяток = num[1]
+            object.соток = num[0]
+        }
+    }
+    addNumber(number)
+    console.log(object)
+</script>
